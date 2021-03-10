@@ -1,0 +1,14 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+        "DisplayName": "msdn-udpandya",
+        "Children": null
+      }
+    }
+  }
+}

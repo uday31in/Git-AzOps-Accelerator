@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "29296653-b834-4dac-ae8b-8a00b5aa6cc1",
+          "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+        },
+        "Location": "northeurope",
+        "Name": "Enforce-AKS-HTTPS",
+        "ResourceName": "Enforce-AKS-HTTPS",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/git-landingzones/providers/Microsoft.Authorization/policyAssignments/Enforce-AKS-HTTPS",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/git-landingzones",
+          "NotScopes": null,
+          "DisplayName": "Enforce-Https-Ingress-AKS",
+          "Description": "Enforce-Https-Ingress-AKS",
+          "EnforcementMode": 0,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d",
+          "Parameters": {
+            "effect": {
+              "value": "deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": null,
+        "Location": "northeurope",
+        "Name": "Deny-Storage-http",
+        "ResourceName": "Deny-Storage-http",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/git-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/git-landingzones",
+          "NotScopes": null,
+          "DisplayName": "Enforce-Secure-Storage",
+          "Description": "Enforce-Secure-Storage",
+          "EnforcementMode": 0,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
+          "Parameters": {
+            "effect": {
+              "value": "Deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}
