@@ -1,0 +1,31 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "contoso",
+        "DisplayName": "contoso",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c",
+        "ParentName": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/APAC",
+            "Name": "APAC",
+            "DisplayName": "APAC",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/SANDBOX",
+            "Name": "SANDBOX",
+            "DisplayName": "SANDBOX",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

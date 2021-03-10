@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "9caa5805-4115-4372-9b8d-e0e2cf7d75d3",
+          "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+        },
+        "Location": "northeurope",
+        "Name": "Deploy-SQL-DB-Auditing",
+        "ResourceName": "Deploy-SQL-DB-Auditing",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/git-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/git-landingzones",
+          "NotScopes": null,
+          "DisplayName": "Deploy-SQL-Audit",
+          "Description": "Deploy-SQL-Audit",
+          "EnforcementMode": 0,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
+          "Parameters": null
+        }
+      }
+    }
+  }
+}
