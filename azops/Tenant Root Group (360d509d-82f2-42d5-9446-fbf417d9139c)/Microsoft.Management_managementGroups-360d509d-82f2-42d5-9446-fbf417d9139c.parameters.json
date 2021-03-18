@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "360d509d-82f2-42d5-9446-fbf417d9139c",
+        "DisplayName": "Tenant Root Group",
+        "ParentId": null,
+        "ParentName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/26727560-a6a3-441c-89bd-6b97b1609896",
+            "Name": "26727560-a6a3-441c-89bd-6b97b1609896",
+            "DisplayName": "Wingtip",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/Tailspin",
+            "Name": "Tailspin",
+            "DisplayName": "Tailspin",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/contoso",
+            "Name": "contoso",
+            "DisplayName": "contoso",
+            "Children": null
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "Name": "dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+            "DisplayName": "msdn-udpandya",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
