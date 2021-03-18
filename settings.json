@@ -1,6 +1,7 @@
 {
     "Version": 1,
     "Static": {
+        "PSFramework.Message.Info.Maximum": 9,
         "AzOps.Core.AutoInitialize": true,
         "AzOps.Core.DefaultDeploymentRegion": "northeurope",
         "AzOps.Core.EnrollmentAccountPrincipalName": "",
