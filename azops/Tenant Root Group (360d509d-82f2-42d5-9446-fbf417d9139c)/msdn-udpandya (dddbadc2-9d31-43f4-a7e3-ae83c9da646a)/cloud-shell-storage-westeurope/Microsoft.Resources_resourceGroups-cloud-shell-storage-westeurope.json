@@ -1,0 +1,9 @@
+{
+  "ResourceGroupName": "cloud-shell-storage-westeurope",
+  "Location": "westeurope",
+  "ProvisioningState": "Succeeded",
+  "Tags": null,
+  "TagsTable": null,
+  "ResourceId": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourceGroups/cloud-shell-storage-westeurope",
+  "ManagedBy": null
+}

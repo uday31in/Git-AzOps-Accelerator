@@ -1,6 +1,7 @@
 {
     "Version": 1,
     "Static": {
+        "PSFramework.Message.Info.Maximum": 9,
         "AzOps.Core.AutoInitialize": true,
         "AzOps.Core.DefaultDeploymentRegion": "northeurope",
         "AzOps.Core.EnrollmentAccountPrincipalName": "",
@@ -26,7 +27,7 @@
         "AzOps.Core.SkipResourceGroup": false,
         "AzOps.Core.SubscriptionsToIncludeResourceGroups": "*",
         "AzOps.Core.SkipRole": false,
-        "AzOps.Core.State": ".",
+        "AzOps.Core.State": "",
         "AzOps.Core.SupportPartialMgDiscovery": false,
         "AzOps.Core.TemplateParameterFileSuffix": ".json",
         "AzOps.Core.ThrottleLimit": 10
