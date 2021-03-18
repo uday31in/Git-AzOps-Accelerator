@@ -34,7 +34,7 @@ on:
   repository_dispatch:
     types:
 
-      - "Azure Activity Logs" 
+      - "Azure Activity Logs"
       - "Enterprise-Scale Deployment"
       - "Enterprise-Scale Event"
 
@@ -48,6 +48,14 @@ jobs:
 
     name: 'Pull'
     runs-on: ubuntu-20.04
+
+    env:
+      ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+      ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+      ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+      ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
 
       #
@@ -88,15 +96,18 @@ jobs:
 
       - name: 'Dependencies'
         run: |
-          Install-Module -Name "AzOps" -AllowPrerelease -Force
-          Install-Module -Name @("Az.Accounts", "Az.Billing", "Az.Resources", "PSFramework") -Force
+          $modules = @(
+              @{ Name = "Az.Accounts"; Repository = "PSGallery"; RequiredVersion = "2.2.5" },
+              @{ Name = "Az.Billing"; Repository = "PSGallery"; RequiredVersion = "2.0.0" },
+              @{ Name = "Az.Resources"; Repository = "PSGallery"; RequiredVersion = "3.2.1" },
+              @{ Name = "PSFramework"; Repository = "PSGallery"; RequiredVersion = "1.6.181" },
+              @{ Name = "AzOps"; Repository = "PSGallery"; AllowPrerelease = $true }
+          )
+          $modules | ForEach-Object {
+              $module = $_
+              Install-Module @module -Force -Verbose
+          }
         shell: pwsh
-        env:
-          AZOPS: 1.0.0
-          AZ_ACCOUNTS: 2.2.5
-          AZ_BILLING: 2.0.0
-          AZ_RESOURCES: 3.2.1
-          PSFRAMEWORK: 1.5.17
 
       #
       # Connect
@@ -105,16 +116,9 @@ jobs:
 
       - name: 'Connect'
         run: |
-          $credential = New-Object System.Management.Automation.PSCredential `
-            -ArgumentList $env:ARM_CLIENT_ID, (ConvertTo-SecureString -String $env:ARM_CLIENT_SECRET -AsPlainText -Force)
-          Connect-AzAccount `
-            -TenantId $env:ARM_TENANT_ID -ServicePrincipal -Credential $credential -SubscriptionId $env:ARM_SUBSCRIPTION_ID
+          $credential = New-Object PSCredential -ArgumentList $env:ARM_CLIENT_ID, (ConvertTo-SecureString -String $env:ARM_CLIENT_SECRET -AsPlainText -Force)
+          Connect-AzAccount -TenantId $env:ARM_TENANT_ID -ServicePrincipal -Credential $credential -SubscriptionId $env:ARM_SUBSCRIPTION_ID
         shell: pwsh
-        env:
-          ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
-          ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
-          ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
-          ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
 
       #
       # Initialize
@@ -137,6 +141,7 @@ jobs:
         id: status
         run: |
           STATUS=$(git status --short)
+          echo $STATUS
           if [ -z "$STATUS" ]
           then
             echo $STATUS
@@ -164,10 +169,10 @@ jobs:
       #
 
       - name: 'Commit'
-        if: steps.status.outputs.state == 'continue'
         run: |
           git commit -m "Automated commit"
         shell: bash
+        if: steps.status.outputs.state == 'continue'
 
       #
       # Push
@@ -175,10 +180,10 @@ jobs:
       #
 
       - name: 'Push'
-        if: steps.status.outputs.state == 'continue'
         run: |
           git push origin automated -f
         shell: bash
+        if: steps.status.outputs.state == 'continue'
 
       #
       # Merge
@@ -186,10 +191,8 @@ jobs:
       #
 
       - name: 'Merge'
-        if: steps.status.outputs.state == 'continue'
         run: |
           gh pr create --title "Automated State" --body "..." --base ${{ github.ref }} --head "automated"
           gh pr merge "automated" --squash --delete-branch
         shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: steps.status.outputs.state == 'continue'
