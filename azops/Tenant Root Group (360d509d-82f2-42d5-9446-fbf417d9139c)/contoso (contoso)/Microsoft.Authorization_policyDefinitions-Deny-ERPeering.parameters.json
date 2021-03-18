@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deny-ERPeering",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "Properties": {
+          "Description": "Denies creation of ER Peerings under the assigned scope.",
+          "DisplayName": "Deny-ERPeering",
+          "Mode": "All",
+          "Parameters": null,
+          "PolicyRule": {
+            "if": {
+              "equals": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+              "field": "type"
+            },
+            "then": {
+              "effect": "deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}
