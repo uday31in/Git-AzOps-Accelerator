@@ -24,6 +24,7 @@
         "AzOps.Core.PartialMgDiscoveryRoot": [],
         "AzOps.Core.SkipPolicy": false,
         "AzOps.Core.SkipResourceGroup": false,
+        "AzOps.Core.SubscriptionsToIncludeResourceGroups": "*",
         "AzOps.Core.SkipRole": false,
         "AzOps.Core.State": ".",
         "AzOps.Core.SupportPartialMgDiscovery": false,
