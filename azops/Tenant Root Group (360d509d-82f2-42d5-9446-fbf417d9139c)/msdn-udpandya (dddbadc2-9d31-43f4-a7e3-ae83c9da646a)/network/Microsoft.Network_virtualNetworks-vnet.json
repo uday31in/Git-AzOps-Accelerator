@@ -15,7 +15,8 @@
         "resourceGuid": "d00e06fd-49f7-4f0e-b971-4586339a4818",
         "addressSpace": {
           "addressPrefixes": [
-            "10.0.0.0/16"
+            "10.0.0.0/16",
+            "10.1.0.0/16"
           ]
         },
         "subnets": [
