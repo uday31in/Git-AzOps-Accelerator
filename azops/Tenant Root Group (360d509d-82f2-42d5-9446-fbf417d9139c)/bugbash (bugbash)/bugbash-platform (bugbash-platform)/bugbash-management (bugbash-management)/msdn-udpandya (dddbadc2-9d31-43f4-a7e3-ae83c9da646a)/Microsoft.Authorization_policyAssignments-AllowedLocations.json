@@ -13,8 +13,8 @@
         "Scope": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
         "NotScopes": null,
         "DisplayName": "Policy to ringfence Azure regions v1.",
-        "Description": "Policy to ringfence Azure regions.",
-        "EnforcementMode": 1,
+        "Description": "Policy to ringfence Azure regions v1.",
+        "EnforcementMode": 0,
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
         "Parameters": {
           "listOfAllowedLocations": {
