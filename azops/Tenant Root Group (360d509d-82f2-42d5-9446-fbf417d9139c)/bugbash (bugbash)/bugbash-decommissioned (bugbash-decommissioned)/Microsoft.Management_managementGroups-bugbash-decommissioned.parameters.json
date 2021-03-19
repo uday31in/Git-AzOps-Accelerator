@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "bugbash-decommissioned",
+        "DisplayName": "bugbash-decommissioned",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/bugbash",
+        "ParentName": "bugbash",
+        "Children": null
+      }
+    }
+  }
+}
