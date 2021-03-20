@@ -27,7 +27,7 @@
         },
         "workspaceCapping": {
           "dailyQuotaGb": -1,
-          "quotaNextResetTime": "Sat, 20 Mar 2021 09:00:00 GMT",
+          "quotaNextResetTime": "Sun, 21 Mar 2021 09:00:00 GMT",
           "dataIngestionStatus": "RespectQuota"
         },
         "publicNetworkAccessForIngestion": "Enabled",
