@@ -87,17 +87,17 @@
                 }
               ],
               "instanceView": {
-                "restartCount": 1,
+                "restartCount": 11,
                 "currentState": {
                   "state": "Running",
-                  "startTime": "2021-03-19T17:50:45.815Z",
+                  "startTime": "2021-03-20T05:19:37.468Z",
                   "detailStatus": ""
                 },
                 "previousState": {
                   "state": "Terminated",
-                  "startTime": "2021-03-19T16:41:40Z",
+                  "startTime": "2021-03-20T04:10:48.047Z",
                   "exitCode": 0,
-                  "finishTime": "2021-03-19T17:50:44.735Z",
+                  "finishTime": "2021-03-20T05:19:36.477Z",
                   "detailStatus": "Completed"
                 },
                 "events": [
@@ -118,17 +118,17 @@
                     "type": "Normal"
                   },
                   {
-                    "count": 2,
+                    "count": 12,
                     "firstTimestamp": "2021-03-19T16:41:40Z",
-                    "lastTimestamp": "2021-03-19T17:50:45Z",
+                    "lastTimestamp": "2021-03-20T05:19:37Z",
                     "name": "Started",
                     "message": "Started container",
                     "type": "Normal"
                   },
                   {
-                    "count": 1,
+                    "count": 11,
                     "firstTimestamp": "2021-03-19T17:50:44Z",
-                    "lastTimestamp": "2021-03-19T17:50:44Z",
+                    "lastTimestamp": "2021-03-20T05:19:36Z",
                     "name": "Killing",
                     "message": "Killing container with id bc6d739df81c224ad572938b15d601590840528aa0da855e9dad9edd6c60b560.",
                     "type": "Normal"
