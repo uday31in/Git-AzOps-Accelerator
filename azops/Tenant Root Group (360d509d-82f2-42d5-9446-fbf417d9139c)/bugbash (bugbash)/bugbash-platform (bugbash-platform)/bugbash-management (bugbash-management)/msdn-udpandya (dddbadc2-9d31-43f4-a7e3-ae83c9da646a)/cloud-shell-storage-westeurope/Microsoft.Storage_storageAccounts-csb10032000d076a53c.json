@@ -7,12 +7,16 @@
     {
       "type": "Microsoft.Storage/storageAccounts",
       "name": "csb10032000d076a53c",
-      "apiVersion": "2021-01-01",
+      "apiVersion": "2021-02-01",
       "location": "[resourceGroup().location]",
       "tags": {
         "ms-resource-usage": "azure-cloud-shell"
       },
       "properties": {
+        "keyCreationTime": {
+          "key1": null,
+          "key2": null
+        },
         "privateEndpointConnections": [],
         "networkAcls": {
           "bypass": "AzureServices",
