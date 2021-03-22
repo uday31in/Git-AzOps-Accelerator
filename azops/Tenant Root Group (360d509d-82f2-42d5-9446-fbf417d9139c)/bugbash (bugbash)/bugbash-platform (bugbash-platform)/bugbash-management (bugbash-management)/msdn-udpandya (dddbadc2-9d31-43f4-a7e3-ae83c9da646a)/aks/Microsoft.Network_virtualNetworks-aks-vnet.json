@@ -11,8 +11,6 @@
       "location": "[resourceGroup().location]",
       "tags": {},
       "properties": {
-        "provisioningState": "Succeeded",
-        "resourceGuid": "032afe8c-9a10-406f-acf9-ed9cc5fc0861",
         "addressSpace": {
           "addressPrefixes": [
             "10.0.0.0/8"
@@ -21,18 +19,12 @@
         "subnets": [
           {
             "name": "virtual-node-aci",
-            "id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourceGroups/aks/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/virtual-node-aci",
-            "etag": "W/\"92d1e4a9-6da8-4480-9027-e5e17dabae7f\"",
             "properties": {
-              "provisioningState": "Succeeded",
               "addressPrefix": "10.241.0.0/16",
               "delegations": [
                 {
                   "name": "aciDelegation",
-                  "id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourceGroups/aks/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/virtual-node-aci/delegations/aciDelegation",
-                  "etag": "W/\"92d1e4a9-6da8-4480-9027-e5e17dabae7f\"",
                   "properties": {
-                    "provisioningState": "Succeeded",
                     "serviceName": "Microsoft.ContainerInstance/containerGroups",
                     "actions": [
                       "Microsoft.Network/virtualNetworks/subnets/action"
@@ -48,10 +40,7 @@
           },
           {
             "name": "default",
-            "id": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourceGroups/aks/providers/Microsoft.Network/virtualNetworks/aks-vnet/subnets/default",
-            "etag": "W/\"92d1e4a9-6da8-4480-9027-e5e17dabae7f\"",
             "properties": {
-              "provisioningState": "Succeeded",
               "addressPrefix": "10.240.0.0/16",
               "delegations": [],
               "privateEndpointNetworkPolicies": "Disabled",

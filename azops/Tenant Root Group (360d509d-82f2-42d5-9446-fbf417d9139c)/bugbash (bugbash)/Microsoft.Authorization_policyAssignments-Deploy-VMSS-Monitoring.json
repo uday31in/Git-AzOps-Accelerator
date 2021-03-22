@@ -9,6 +9,11 @@
       "name": "Deploy-VMSS-Monitoring",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "ccf6a52b-49d0-4b26-bc2b-8e9acb9b7229",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash",
         "NotScopes": null,

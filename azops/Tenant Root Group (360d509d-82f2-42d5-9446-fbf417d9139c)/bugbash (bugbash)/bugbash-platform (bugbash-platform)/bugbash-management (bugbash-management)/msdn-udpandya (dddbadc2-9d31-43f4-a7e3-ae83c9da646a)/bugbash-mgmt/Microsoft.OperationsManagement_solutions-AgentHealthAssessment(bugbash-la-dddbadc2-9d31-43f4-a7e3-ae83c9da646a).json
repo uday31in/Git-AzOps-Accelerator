@@ -12,9 +12,6 @@
       "tags": null,
       "properties": {
         "workspaceResourceId": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourcegroups/bugbash-mgmt/providers/Microsoft.OperationalInsights/workspaces/bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
-        "provisioningState": "Succeeded",
-        "creationTime": "Fri, 19 Mar 2021 16:38:52 GMT",
-        "lastModifiedTime": "Fri, 19 Mar 2021 16:38:52 GMT",
         "containedResources": [
           "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourcegroups/bugbash-mgmt/providers/Microsoft.OperationalInsights/workspaces/bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a/views/AgentHealthAssessment(bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a)"
         ]

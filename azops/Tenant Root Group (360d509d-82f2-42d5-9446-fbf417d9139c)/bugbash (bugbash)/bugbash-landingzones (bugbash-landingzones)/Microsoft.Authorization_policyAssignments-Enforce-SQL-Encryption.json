@@ -9,6 +9,11 @@
       "name": "Enforce-SQL-Encryption",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "f665e554-390c-40eb-81bf-d9a97b58c8c9",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
         "NotScopes": null,

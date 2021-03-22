@@ -14,7 +14,6 @@
       },
       "properties": {
         "sku": "Standard",
-        "provisioningState": "Succeeded",
         "containers": [
           {
             "name": "az-scripts-k6kwnhoouujpyazscripts",
@@ -83,40 +82,30 @@
                 "restartCount": 0,
                 "currentState": {
                   "state": "Terminated",
-                  "startTime": "2021-01-28T20:41:12Z",
                   "exitCode": 0,
-                  "finishTime": "2021-01-28T21:41:23Z",
                   "detailStatus": "Completed"
                 },
                 "events": [
                   {
                     "count": 1,
-                    "firstTimestamp": "2021-01-28T20:40:32Z",
-                    "lastTimestamp": "2021-01-28T20:40:32Z",
                     "name": "Pulling",
                     "message": "pulling image \"mcr.microsoft.com/azure-cli:2.9.1\"",
                     "type": "Normal"
                   },
                   {
                     "count": 1,
-                    "firstTimestamp": "2021-01-28T20:41:08Z",
-                    "lastTimestamp": "2021-01-28T20:41:08Z",
                     "name": "Pulled",
                     "message": "Successfully pulled image \"mcr.microsoft.com/azure-cli:2.9.1\"",
                     "type": "Normal"
                   },
                   {
                     "count": 1,
-                    "firstTimestamp": "2021-01-28T20:41:12Z",
-                    "lastTimestamp": "2021-01-28T20:41:12Z",
                     "name": "Created",
                     "message": "Created container",
                     "type": "Normal"
                   },
                   {
                     "count": 1,
-                    "firstTimestamp": "2021-01-28T20:41:12Z",
-                    "lastTimestamp": "2021-01-28T20:41:12Z",
                     "name": "Started",
                     "message": "Started container",
                     "type": "Normal"
@@ -154,8 +143,6 @@
           "events": [
             {
               "count": 1,
-              "firstTimestamp": "2021-01-28T20:40:31Z",
-              "lastTimestamp": "2021-01-28T20:40:31Z",
               "name": "SuccessfulMountAzureFileVolume",
               "message": "Successfully mounted Azure File Volume.",
               "type": "Normal"
