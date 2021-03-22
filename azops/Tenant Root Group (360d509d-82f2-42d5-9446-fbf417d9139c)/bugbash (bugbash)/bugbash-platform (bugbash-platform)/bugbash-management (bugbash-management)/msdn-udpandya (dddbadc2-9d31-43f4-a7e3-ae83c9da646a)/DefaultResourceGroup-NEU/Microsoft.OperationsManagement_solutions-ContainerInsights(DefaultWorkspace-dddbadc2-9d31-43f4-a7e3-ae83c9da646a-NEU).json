@@ -12,9 +12,6 @@
       "tags": null,
       "properties": {
         "workspaceResourceId": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourcegroups/DefaultResourceGroup-NEU/providers/Microsoft.OperationalInsights/workspaces/DefaultWorkspace-dddbadc2-9d31-43f4-a7e3-ae83c9da646a-NEU",
-        "provisioningState": "Succeeded",
-        "creationTime": "Mon, 25 Jan 2021 01:19:04 GMT",
-        "lastModifiedTime": "Mon, 08 Mar 2021 23:14:23 GMT",
         "containedResources": [],
         "workbookTemplates": []
       }

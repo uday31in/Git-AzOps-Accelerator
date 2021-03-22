@@ -9,6 +9,11 @@
       "name": "Enforce-AKS-HTTPS",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "649cb20b-3af1-4ce7-a5c5-51eadc0aafa2",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
         "NotScopes": null,

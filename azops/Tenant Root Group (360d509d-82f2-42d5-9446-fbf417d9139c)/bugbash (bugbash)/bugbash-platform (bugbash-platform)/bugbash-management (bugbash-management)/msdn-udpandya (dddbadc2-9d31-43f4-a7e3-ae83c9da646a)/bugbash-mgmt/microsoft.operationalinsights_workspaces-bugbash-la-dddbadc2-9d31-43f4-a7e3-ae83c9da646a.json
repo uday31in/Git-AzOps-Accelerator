@@ -13,11 +13,9 @@
       "properties": {
         "source": "Azure",
         "customerId": "6d415aac-cbd9-42bc-9193-f6432a6ef0d4",
-        "provisioningState": "Succeeded",
         "sku": {
           "name": "pergb2018",
-          "maxCapacityReservationLevel": 3000,
-          "lastSkuUpdate": "Fri, 19 Mar 2021 16:38:12 GMT"
+          "maxCapacityReservationLevel": 3000
         },
         "retentionInDays": 30,
         "features": {
@@ -27,13 +25,10 @@
         },
         "workspaceCapping": {
           "dailyQuotaGb": -1,
-          "quotaNextResetTime": "Mon, 22 Mar 2021 09:00:00 GMT",
           "dataIngestionStatus": "RespectQuota"
         },
         "publicNetworkAccessForIngestion": "Enabled",
-        "publicNetworkAccessForQuery": "Enabled",
-        "createdDate": "Fri, 19 Mar 2021 16:38:12 GMT",
-        "modifiedDate": "Fri, 19 Mar 2021 17:27:54 GMT"
+        "publicNetworkAccessForQuery": "Enabled"
       }
     }
   ],

@@ -9,6 +9,11 @@
       "name": "Deploy-Resource-Diag",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "0241a9bf-9a6a-4e16-a01c-cc2614ef66fd",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash",
         "NotScopes": null,

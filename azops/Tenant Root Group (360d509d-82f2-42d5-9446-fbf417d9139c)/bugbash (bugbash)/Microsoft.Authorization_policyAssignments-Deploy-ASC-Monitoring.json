@@ -9,6 +9,11 @@
       "name": "Deploy-ASC-Monitoring",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "b2ff42a2-df4c-4b09-976b-bfccaa32f02b",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash",
         "NotScopes": null,

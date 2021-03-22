@@ -9,6 +9,11 @@
       "name": "Deploy-VM-Monitoring",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "10f527bd-0eb2-4576-a550-1a98634f2cd9",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash",
         "NotScopes": null,

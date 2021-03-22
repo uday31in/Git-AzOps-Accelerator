@@ -9,6 +9,11 @@
       "name": "Deny-Priv-Esc-AKS",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "72250cd5-5cd1-4772-a013-9fde5d8f01a3",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
         "NotScopes": null,

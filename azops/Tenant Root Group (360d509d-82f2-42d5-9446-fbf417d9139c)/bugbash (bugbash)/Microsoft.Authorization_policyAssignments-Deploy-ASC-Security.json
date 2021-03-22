@@ -9,6 +9,11 @@
       "name": "Deploy-ASC-Security",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "7ff63f51-7b6f-4cbc-8981-d461beb4960b",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash",
         "NotScopes": null,

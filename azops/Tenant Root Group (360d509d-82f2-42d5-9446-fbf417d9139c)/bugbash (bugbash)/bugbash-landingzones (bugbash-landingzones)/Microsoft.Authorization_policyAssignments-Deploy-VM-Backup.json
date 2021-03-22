@@ -9,6 +9,11 @@
       "name": "Deploy-VM-Backup",
       "apiVersion": "2020-09-01",
       "location": "[deployment().location]",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "006e7e0f-bf14-4368-8b58-73d93b1da2d8",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
         "NotScopes": null,
