@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "Deny-IP-forwarding",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
         "NotScopes": null,

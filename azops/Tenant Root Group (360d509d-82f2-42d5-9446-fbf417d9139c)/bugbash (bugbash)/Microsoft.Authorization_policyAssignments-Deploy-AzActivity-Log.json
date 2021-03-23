@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "Deploy-AzActivity-Log",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "identity": {
         "type": "SystemAssigned",
         "principalId": "e154a762-32b2-4fdf-9ccd-4675b0aff890",

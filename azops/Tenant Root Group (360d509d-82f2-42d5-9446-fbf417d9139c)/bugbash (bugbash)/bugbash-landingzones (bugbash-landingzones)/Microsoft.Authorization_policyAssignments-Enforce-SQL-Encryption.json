@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "Enforce-SQL-Encryption",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "identity": {
         "type": "SystemAssigned",
         "principalId": "f665e554-390c-40eb-81bf-d9a97b58c8c9",

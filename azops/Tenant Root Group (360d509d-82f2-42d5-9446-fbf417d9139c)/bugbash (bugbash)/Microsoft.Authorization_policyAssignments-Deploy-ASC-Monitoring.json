@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "Deploy-ASC-Monitoring",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "identity": {
         "type": "SystemAssigned",
         "principalId": "b2ff42a2-df4c-4b09-976b-bfccaa32f02b",

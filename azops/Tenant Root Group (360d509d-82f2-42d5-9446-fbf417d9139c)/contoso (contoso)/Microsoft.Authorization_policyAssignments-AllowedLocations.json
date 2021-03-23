@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "AllowedLocations",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "identity": {
         "type": "SystemAssigned",
         "principalId": "5372bab3-ca65-4982-984a-148dea5436be",

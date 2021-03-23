@@ -8,7 +8,7 @@
       "type": "Microsoft.Authorization/policyAssignments",
       "name": "Deploy-ASC-Security",
       "apiVersion": "2020-09-01",
-      "location": "[deployment().location]",
+      "location": "northeurope",
       "identity": {
         "type": "SystemAssigned",
         "principalId": "7ff63f51-7b6f-4cbc-8981-d461beb4960b",
