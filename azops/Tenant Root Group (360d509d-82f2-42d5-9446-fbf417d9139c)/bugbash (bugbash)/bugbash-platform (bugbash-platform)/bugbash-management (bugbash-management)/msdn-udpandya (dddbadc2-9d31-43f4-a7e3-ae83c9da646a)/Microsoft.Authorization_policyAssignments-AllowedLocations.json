@@ -19,7 +19,7 @@
         "NotScopes": null,
         "DisplayName": "Policy to ringfence Azure regions v1.",
         "Description": "Policy to ringfence Azure regions v1.",
-        "EnforcementMode": 0,
+        "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
         "Parameters": {
           "listOfAllowedLocations": {
