@@ -19,7 +19,7 @@
         "NotScopes": null,
         "DisplayName": "Deploy-ASC-Defender",
         "Description": "Deploy-ASC-Defender",
-        "EnforcementMode": 0,
+        "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/bugbash/providers/Microsoft.Authorization/policyDefinitions/Deploy-ASC-Standard",
         "Parameters": {
           "pricingTierVms": {

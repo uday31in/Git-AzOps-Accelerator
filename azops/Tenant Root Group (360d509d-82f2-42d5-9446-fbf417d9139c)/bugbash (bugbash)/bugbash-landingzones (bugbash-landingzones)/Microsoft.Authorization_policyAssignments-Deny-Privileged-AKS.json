@@ -19,7 +19,7 @@
         "NotScopes": null,
         "DisplayName": "Deny-Privileged-Containers-AKS",
         "Description": "Deny-Privileged-Containers-AKS",
-        "EnforcementMode": 0,
+        "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/95edb821-ddaf-4404-9732-666045e056b4",
         "Parameters": {
           "effect": {

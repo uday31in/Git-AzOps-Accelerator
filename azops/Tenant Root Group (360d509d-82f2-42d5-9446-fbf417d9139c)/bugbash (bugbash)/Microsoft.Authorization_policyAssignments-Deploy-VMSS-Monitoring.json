@@ -19,7 +19,7 @@
         "NotScopes": null,
         "DisplayName": "Deploy-VMSS-Monitoring",
         "Description": "Deploy-VMSS-Monitoring",
-        "EnforcementMode": 0,
+        "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
         "Parameters": {
           "logAnalytics_1": {

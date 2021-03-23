@@ -19,7 +19,7 @@
         "NotScopes": null,
         "DisplayName": "Deploy-Windows-Arc-Monitoring",
         "Description": "Deploy-Windows-Arc-Monitoring",
-        "EnforcementMode": 0,
+        "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69af7d4a-7b18-4044-93a9-2651498ef203",
         "Parameters": {
           "logAnalytics": {
