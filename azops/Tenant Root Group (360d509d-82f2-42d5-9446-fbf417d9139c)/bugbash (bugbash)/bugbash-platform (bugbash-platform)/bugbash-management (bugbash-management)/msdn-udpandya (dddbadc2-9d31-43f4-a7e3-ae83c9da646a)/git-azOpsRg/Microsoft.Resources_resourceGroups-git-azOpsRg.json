@@ -1,9 +1,17 @@
 {
-  "ResourceGroupName": "git-azOpsRg",
-  "Location": "northeurope",
-  "ProvisioningState": "Succeeded",
-  "Tags": null,
-  "TagsTable": null,
-  "ResourceId": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourceGroups/git-azOpsRg",
-  "ManagedBy": null
+  "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Resources/resourceGroups",
+      "name": "git-azOpsRg",
+      "apiVersion": "2019-05-01",
+      "location": "northeurope",
+      "tags": null,
+      "properties": {}
+    }
+  ],
+  "outputs": {}
 }
