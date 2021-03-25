@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-VM-Backup",
+      "apiVersion": "2020-09-01",
+      "location": "northeurope",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "006e7e0f-bf14-4368-8b58-73d93b1da2d8",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
+        "NotScopes": null,
+        "DisplayName": "Deploy-VM-Backup",
+        "Description": "Deploy-VM-Backup",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/98d0b9f8-fd90-49c9-88e2-d3baf3b0dd86",
+        "Parameters": {}
+      }
+    }
+  ],
+  "outputs": {}
+}
