@@ -11,6 +11,10 @@
       "location": "[resourceGroup().location]",
       "tags": {},
       "properties": {
+        "keyCreationTime": {
+          "key1": null,
+          "key2": null
+        },
         "privateEndpointConnections": [],
         "networkAcls": {
           "bypass": "AzureServices",
@@ -32,11 +36,7 @@
           },
           "keySource": "Microsoft.Storage"
         },
-        "accessTier": "Hot",
-        "keyCreationTime": {
-          "key1": null,
-          "key2": null
-        }
+        "accessTier": "Hot"
       }
     }
   ],
