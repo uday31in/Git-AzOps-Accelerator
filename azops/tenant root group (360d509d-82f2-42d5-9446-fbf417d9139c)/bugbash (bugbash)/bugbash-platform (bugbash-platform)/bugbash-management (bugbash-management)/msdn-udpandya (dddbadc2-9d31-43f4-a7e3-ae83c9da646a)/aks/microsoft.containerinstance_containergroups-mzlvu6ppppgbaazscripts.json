@@ -7,7 +7,7 @@
     {
       "type": "Microsoft.ContainerInstance/containerGroups",
       "name": "mzlvu6ppppgbaazscripts",
-      "apiVersion": "2021-03-01",
+      "apiVersion": "2020-11-01",
       "location": "[resourceGroup().location]",
       "tags": {
         "AZ_SCRIPTS_STATUS": "runCLI:Running"
