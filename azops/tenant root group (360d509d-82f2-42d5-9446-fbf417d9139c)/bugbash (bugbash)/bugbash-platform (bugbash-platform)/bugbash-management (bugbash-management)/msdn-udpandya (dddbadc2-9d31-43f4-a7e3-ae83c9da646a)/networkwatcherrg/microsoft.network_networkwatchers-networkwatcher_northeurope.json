@@ -8,7 +8,7 @@
       "type": "Microsoft.Network/networkWatchers",
       "name": "NetworkWatcher_northeurope",
       "apiVersion": "2020-11-01",
-      "location": "[resourceGroup().location]",
+      "location": "northeurope",
       "tags": null,
       "properties": {
         "runningOperationIds": []

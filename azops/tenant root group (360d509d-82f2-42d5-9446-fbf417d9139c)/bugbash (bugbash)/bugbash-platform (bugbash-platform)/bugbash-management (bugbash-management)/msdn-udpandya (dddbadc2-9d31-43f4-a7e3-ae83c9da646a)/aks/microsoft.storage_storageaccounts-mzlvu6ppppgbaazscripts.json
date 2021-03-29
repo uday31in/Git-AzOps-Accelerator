@@ -8,7 +8,7 @@
       "type": "Microsoft.Storage/storageAccounts",
       "name": "mzlvu6ppppgbaazscripts",
       "apiVersion": "2021-02-01",
-      "location": "[resourceGroup().location]",
+      "location": "northeurope",
       "tags": {},
       "properties": {
         "keyCreationTime": {

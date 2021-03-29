@@ -8,7 +8,7 @@
       "type": "Microsoft.ContainerService/managedClusters",
       "name": "aks-test",
       "apiVersion": "2021-03-01",
-      "location": "[resourceGroup().location]",
+      "location": "northeurope",
       "tags": null,
       "properties": {
         "powerState": {

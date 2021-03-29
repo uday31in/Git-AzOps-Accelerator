@@ -8,7 +8,7 @@
       "type": "Microsoft.Storage/storageAccounts",
       "name": "csb10032000b8f70060",
       "apiVersion": "2021-02-01",
-      "location": "[resourceGroup().location]",
+      "location": "westeurope",
       "tags": {
         "ms-resource-usage": "azure-cloud-shell"
       },

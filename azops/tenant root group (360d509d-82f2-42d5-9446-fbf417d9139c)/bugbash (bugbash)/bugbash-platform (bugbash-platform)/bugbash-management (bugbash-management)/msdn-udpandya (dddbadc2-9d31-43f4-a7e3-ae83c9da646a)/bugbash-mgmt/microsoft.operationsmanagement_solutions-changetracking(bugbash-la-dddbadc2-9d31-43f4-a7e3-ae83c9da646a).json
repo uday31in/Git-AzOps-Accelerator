@@ -8,7 +8,7 @@
       "type": "Microsoft.OperationsManagement/solutions",
       "name": "ChangeTracking(bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a)",
       "apiVersion": "2015-11-01-preview",
-      "location": "[resourceGroup().location]",
+      "location": "North Europe",
       "tags": null,
       "properties": {
         "workspaceResourceId": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourcegroups/bugbash-mgmt/providers/Microsoft.OperationalInsights/workspaces/bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
