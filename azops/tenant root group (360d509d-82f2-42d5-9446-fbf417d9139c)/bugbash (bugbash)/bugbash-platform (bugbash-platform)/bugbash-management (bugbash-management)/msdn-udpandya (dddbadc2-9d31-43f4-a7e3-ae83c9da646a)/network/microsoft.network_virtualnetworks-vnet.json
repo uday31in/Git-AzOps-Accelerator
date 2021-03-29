@@ -8,7 +8,7 @@
       "type": "Microsoft.Network/virtualNetworks",
       "name": "vnet",
       "apiVersion": "2020-11-01",
-      "location": "[resourceGroup().location]",
+      "location": "northeurope",
       "tags": {},
       "properties": {
         "addressSpace": {

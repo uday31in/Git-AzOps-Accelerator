@@ -7,8 +7,8 @@
     {
       "type": "Microsoft.KeyVault/vaults",
       "name": "git-azOpsRg-azopsvault",
-      "apiVersion": "2019-09-01",
-      "location": "[resourceGroup().location]",
+      "apiVersion": "2021-04-01-preview",
+      "location": "northeurope",
       "properties": {
         "sku": {
           "family": "A",

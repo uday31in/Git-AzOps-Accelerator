@@ -8,7 +8,7 @@
       "type": "Microsoft.Automation/automationAccounts",
       "name": "bugbash-a-dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
       "apiVersion": "2020-01-13-preview",
-      "location": "[resourceGroup().location]",
+      "location": "northeurope",
       "tags": {},
       "properties": {
         "sku": {
