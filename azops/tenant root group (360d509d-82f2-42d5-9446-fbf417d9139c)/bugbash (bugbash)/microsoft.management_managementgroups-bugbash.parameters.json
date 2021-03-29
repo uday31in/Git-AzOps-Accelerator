@@ -12,13 +12,6 @@
         "Children": [
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/bugbash-decommissioned",
-            "Name": "bugbash-decommissioned",
-            "DisplayName": "bugbash-decommissioned",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
             "Name": "bugbash-landingzones",
             "DisplayName": "bugbash-landingzones",
@@ -29,13 +22,6 @@
             "Id": "/providers/Microsoft.Management/managementGroups/bugbash-platform",
             "Name": "bugbash-platform",
             "DisplayName": "bugbash-platform",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/bugbash-sandboxes",
-            "Name": "bugbash-sandboxes",
-            "DisplayName": "bugbash-sandboxes",
             "Children": null
           }
         ]
