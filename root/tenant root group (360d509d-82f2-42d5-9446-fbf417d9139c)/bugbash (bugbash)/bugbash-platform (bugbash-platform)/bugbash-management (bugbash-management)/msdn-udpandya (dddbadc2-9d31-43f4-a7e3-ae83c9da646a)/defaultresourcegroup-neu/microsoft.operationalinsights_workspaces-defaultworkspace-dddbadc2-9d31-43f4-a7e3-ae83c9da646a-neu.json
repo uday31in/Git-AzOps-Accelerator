@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.operationalinsights/workspaces",
+      "name": "DefaultWorkspace-dddbadc2-9d31-43f4-a7e3-ae83c9da646a-NEU",
+      "apiVersion": "2020-10-01",
+      "location": "northeurope",
+      "tags": null,
+      "properties": {
+        "source": "Azure",
+        "customerId": "07825f32-cfab-45d6-983c-09d4ca1a3cba",
+        "sku": {
+          "name": "pergb2018",
+          "maxCapacityReservationLevel": 3000
+        },
+        "retentionInDays": 30,
+        "features": {
+          "legacy": 0,
+          "searchVersion": 1,
+          "enableLogAccessUsingOnlyResourcePermissions": true
+        },
+        "workspaceCapping": {
+          "dailyQuotaGb": -1,
+          "dataIngestionStatus": "RespectQuota"
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    }
+  ],
+  "outputs": {}
+}
