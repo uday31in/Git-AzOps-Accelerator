@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Management/managementGroups",
+      "name": "360d509d-82f2-42d5-9446-fbf417d9139c",
+      "apiVersion": "2021-04-01",
+      "scope": "/",
+      "properties": {
+        "displayName": "Tenant Root Group",
+        "details": {
+          "parent": {
+            "id": null
+          }
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "AzOps-microsoft.management_managementgroups-nested",
+      "location": "northeurope",
+      "properties": {
+        "mode": "Incremental",
+        "template": {
+          "$schema": "https://schema.management.azure.com/schemas/2019-08-01/tenantDeploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "resources": [
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "contoso",
+              "scope": "/",
+              "properties": {
+                "displayName": "contoso",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "Tailspin",
+              "scope": "/",
+              "properties": {
+                "displayName": "Tailspin",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c"
+                  }
+                }
+              }
+            },
+            {
+              "type": "Microsoft.Management/managementGroups",
+              "apiVersion": "2020-05-01",
+              "name": "bugbash",
+              "scope": "/",
+              "properties": {
+                "displayName": "bugbash",
+                "details": {
+                  "parent": {
+                    "id": "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c"
+                  }
+                }
+              }
+            }
+          ],
+          "outputs": {}
+        }
+      },
+      "dependsOn": [
+        "/providers/Microsoft.Management/managementGroups/360d509d-82f2-42d5-9446-fbf417d9139c"
+      ]
+    }
+  ],
+  "outputs": {}
+}
