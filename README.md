@@ -2,23 +2,29 @@
 
 This template repository is for getting started with the AzOps integrated CI/CD solution.
 
-## Guides
+### Samples
 
+* [GitHub Actions](https://github.com/Azure/AzOps-Accelerator/tree/main/.github/samples)
+* [Azure Pipelines](https://github.com/Azure/AzOps-Accelerator/tree/main/.pipelines/samples)
+
+### Documentation
+
+* [Home](https://github.com/azure/azops-accelerator/wiki/home)
 * [Introduction](https://github.com/azure/azops-accelerator/wiki/introduction)
 * [Prerequisites](https://github.com/azure/azops-accelerator/wiki/prerequisites)
 * [Getting Started](https://github.com/azure/azops-accelerator/wiki/getting-started)
-  * [GitHub Actions](https://github.com/azure/azops-accelerator/wiki/github-actions)
-  * [Azure Pipelines](https://github.com/azure/azops-accelerator/wiki/azure-pipelines)
 * [Templates](https://github.com/azure/azops-accelerator/wiki/templates)
-  * [Pull](https://github.com/azure/azops-accelerator/wiki/pull)
-  * [Push](https://github.com/azure/azops-accelerator/wiki/push)
 * [Private Feeds](https://github.com/azure/azops-accelerator/wiki/private-feeds)
-  * [Azure Artifacts](https://github.com/azure/azops-accelerator/wiki/azure-artifacts)
-  * [GitHub Packages](https://github.com/azure/azOps-accelerator/wiki/GitHub-Packages)
+* [Settings](https://github.com/azure/azops-accelerator/wiki/settings)
+* [Migration](https://github.com/azure/azops-accelerator/wiki/migration)
 * [Troubleshooting](https://github.com/azure/azops-accelerator/wiki/troubleshooting)
 * [FAQ](https://github.com/azure/azops-accelerator/wiki/frequently-asked-questions)
 
-## Contributing
+### Issues
+
+If you find any bugs when using the Accelerator, please file an issue on our [AzOps issue](https://github.com/azure/azops/issues) page.
+
+### Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
@@ -32,7 +38,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Trademarks
+### Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
 trademarks or logos is subject to and must follow
