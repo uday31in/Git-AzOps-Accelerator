@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Enforce-AKS-HTTPS",
+      "apiVersion": "2020-09-01",
+      "location": "northeurope",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "649cb20b-3af1-4ce7-a5c5-51eadc0aafa2",
+        "tenantId": "360d509d-82f2-42d5-9446-fbf417d9139c"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/bugbash-landingzones",
+        "NotScopes": null,
+        "DisplayName": "Enforce-Https-Ingress-AKS",
+        "Description": "Enforce-Https-Ingress-AKS",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d",
+        "Parameters": {
+          "effect": {
+            "value": "deny"
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}
