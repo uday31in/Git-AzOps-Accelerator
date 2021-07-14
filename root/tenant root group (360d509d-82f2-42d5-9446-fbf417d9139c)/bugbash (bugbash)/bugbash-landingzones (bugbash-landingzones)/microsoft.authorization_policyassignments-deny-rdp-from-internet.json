@@ -16,7 +16,8 @@
         "Description": "Deny-RDP-from-Internet",
         "EnforcementMode": "Default",
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/bugbash/providers/Microsoft.Authorization/policyDefinitions/Deny-RDP-From-Internet",
-        "Parameters": null
+        "Parameters": null,
+        "NonComplianceMessages": null
       }
     }
   ],

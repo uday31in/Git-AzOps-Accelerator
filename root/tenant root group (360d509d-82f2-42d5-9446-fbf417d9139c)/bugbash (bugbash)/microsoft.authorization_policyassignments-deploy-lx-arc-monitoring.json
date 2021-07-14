@@ -25,7 +25,8 @@
           "logAnalytics": {
             "value": "/subscriptions/dddbadc2-9d31-43f4-a7e3-ae83c9da646a/resourcegroups/bugbash-mgmt/providers/microsoft.operationalinsights/workspaces/bugbash-la-dddbadc2-9d31-43f4-a7e3-ae83c9da646a"
           }
-        }
+        },
+        "NonComplianceMessages": null
       }
     }
   ],
