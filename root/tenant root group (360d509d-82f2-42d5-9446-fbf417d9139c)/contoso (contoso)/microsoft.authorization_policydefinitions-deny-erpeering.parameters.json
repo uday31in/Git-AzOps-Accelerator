@@ -9,6 +9,7 @@
         "Properties": {
           "Description": "Denies creation of ER Peerings under the assigned scope.",
           "DisplayName": "Deny-ERPeering",
+          "Metadata": {},
           "Mode": "All",
           "Parameters": null,
           "PolicyRule": {

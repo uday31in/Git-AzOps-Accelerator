@@ -9,6 +9,7 @@
         "Properties": {
           "Description": "When a Key Vault is created with out soft delete enabled then this will add it.",
           "DisplayName": "Append-KV-SoftDelete1",
+          "Metadata": {},
           "Mode": "All",
           "Parameters": {},
           "PolicyRule": {

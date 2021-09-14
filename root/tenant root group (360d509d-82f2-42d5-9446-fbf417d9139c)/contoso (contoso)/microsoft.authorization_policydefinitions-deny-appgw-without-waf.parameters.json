@@ -9,6 +9,7 @@
         "Properties": {
           "Description": "",
           "DisplayName": "Deny-AppGW-Without-WAF",
+          "Metadata": {},
           "Mode": "All",
           "Parameters": null,
           "PolicyRule": {
