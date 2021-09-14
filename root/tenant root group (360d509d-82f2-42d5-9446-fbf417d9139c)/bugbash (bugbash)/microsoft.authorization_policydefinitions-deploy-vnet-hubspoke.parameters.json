@@ -9,6 +9,7 @@
         "Properties": {
           "Description": "This policy deploys virtual network and peer to the hub",
           "DisplayName": "Deploys virtual network peering to hub",
+          "Metadata": {},
           "Mode": "All",
           "Parameters": {
             "vNetName": {

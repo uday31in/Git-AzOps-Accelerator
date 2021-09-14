@@ -9,6 +9,7 @@
         "Properties": {
           "Description": null,
           "DisplayName": null,
+          "Metadata": {},
           "Mode": "All",
           "Parameters": {},
           "PolicyRule": {
