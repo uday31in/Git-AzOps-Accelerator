@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "Microsoft.Management/managementGroups/subscriptions",
-      "name": "bugbash-management/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
+      "name": "360d509d-82f2-42d5-9446-fbf417d9139c/dddbadc2-9d31-43f4-a7e3-ae83c9da646a",
       "apiVersion": "2021-04-01",
       "scope": "/"
     }
